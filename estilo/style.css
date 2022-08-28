@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/**Boot CSS**/
+
+.center {
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.w33 {
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+.w50 {
+  padding: 0 2%;
+  width: 50%;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/**Estilização do site**/
+
+header {
+  padding: 20px 0;
+  background: #47015e;
+}
+
+header .logo {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+
+.Mobile {
+  display: none;
+}
+
+nav.Desktop ul {
+  position: relative;
+  top: 6px;
+  list-style-type: none;
+}
+
+nav.Desktop li {
+  font-size: 15px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+nav.Desktop a {
+  color: white;
+  text-decoration: none;
+}
+
+section.banner-principal {
+  width: 100%;
+  height: 600px;
+  background-image: url("../image/bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+section.banner-principal form {
+  width: 90%;
+  max-width: 500px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+section.banner-principal form h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+section.banner-principal form input[type="email"] {
+  width: 100%;
+  height: 66px;
+  background: white;
+  color: #333;
+  font-size: 23px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+section.banner-principal form input[type="submit"] {
+  width: 100%;
+  height: 66px;
+  background: #c3c2c4;
+  color: #474647;
+  font-size: 23px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0;
+}
+
+section.sobre-autor {
+  padding: 30px 0;
+}
+
+section.sobre-autor h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+section.sobre-autor p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+section.especialidades {
+  padding: 40px 0;
+  background: #f0f0f0;
+}
+
+section.especialidades h2.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #242323;
+}
+
+.box-especialidades {
+  text-align: center;
+  margin: 40px 0;
+  padding: 0 30px;
+}
+
+.box-especialidades h3 {
+  font-size: 40px;
+  color: #242323;
+}
+
+.box-especialidades h4 {
+  font-weight: 300;
+  font-size: 25px;
+  color: #242323;
+}
+
+.box-especialidades p {
+  font-size: 16px;
+  color: #242323;
+  margin-top: 10px;
+}
+
+section.extras {
+  padding: 30px 0;
+  background-color: #47015e;
+  color: white;
+}
+
+.servicos-container,
+.depoimentos-container {
+  padding: 0 2%;
+}
+
+section.extras .title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.depoimentos-single {
+  padding: 15px 0;
+}
+
+.depoimentos-single p {
+  margin-top: 10px;
+}
+
+.depoimento-autor {
+  font-weight: bold;
+}
+
+.servicos ul {
+  margin: 20px 0;
+  list-style-position: inside;
+}
+
+.servicos li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer {
+  padding: 30px 0;
+  background: #333333;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.contato-container {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contato-container input[type="text"] {
+  margin: 8px 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+}
+
+.contato-container textarea {
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+  resize: vertical;
+}
+
+.contato-container input[type="submit"] {
+  background: #333333;
+  width: 140px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .w50 {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .w33 {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .box-especialidades {
+    margin: 0;
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav.Desktop {
+    display: none;
+  }
+
+  nav.Mobile {
+    display: block;
+  }
+
+  .botao-menu-mobile {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+
+  nav.Mobile ul {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.Mobile li {
+    width: 100%;
+    display: block;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    padding: 8px 0;
+  }
+
+  nav.Mobile li a {
+    color: #444;
+    text-decoration: none;
+  }
+}
